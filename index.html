@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bank transactions</title>
+  </head>
+  <body>
+    <div class="top-container">
+      <h1>Bank transaction</h1>
+      <div class="screen">
+        <h3>Bank Balance: R<span>0.00</span></h3>
+      </div>
+    </div>
+    <div class="bottom-container">
+      <h4>PIN: 1740</h4>
+      <div class="container">
+        <div class="cap">Start your Banking</div>
+        <p class="confirm"></p>
+        <button>Proceed</button>
+      </div>
+      <input type="password" placeholder="Enter Pin..." />
+      <input type="number" placeholder="Enter Amount..." />
+      <p class="error"></p>
+      <div id="withdraw" class="show">Withdraw</div>
+      <div id="deposit" class="show">Deposit</div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,229 @@
+// Global styling
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-container {
+  width: 50%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 100px;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+    background-color: #04cef8;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  }
+
+  .screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid grey;
+    width: 80%;
+    height: 220px;
+    box-shadow: 3px 0px 2px 0px rgba(128, 128, 128, 0.393),
+      -3px 0px 2px 0px rgba(128, 128, 128, 0.393),
+      0px 4px 2px 0px rgba(128, 128, 128, 0.893),
+      0px -2px 2px 0px rgba(128, 128, 128, 0.393);
+  }
+}
+
+.bottom-container {
+  margin: 0 auto;
+  width: 50%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 100px;
+  box-shadow: 0px 0px 2px 2px rgba(128, 128, 128, 0.418);
+  padding: 1.5em 0 1.5em 0;
+
+  .error {
+    margin-top: 0.2em;
+    color: red;
+    text-align: center;
+  }
+
+  h4 {
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 1.5em;
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 2px 2px rgba(128, 128, 128, 0.418);
+
+    button,
+    div {
+      padding: 10px;
+    }
+  }
+
+  input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin-top: 1.5em;
+    margin-left: 10%;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    box-shadow: 0px 0px 2px 2px rgba(128, 128, 128, 0.418);
+  }
+  input[type="number"] {
+    width: 80%;
+    padding: 10px;
+    margin-top: 1.5em;
+    margin-left: 10%;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    box-shadow: 0px 0px 2px 2px rgba(128, 128, 128, 0.418);
+    display: none;
+  }
+
+  .show {
+    visibility: hidden;
+  }
+
+  #withdraw {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    margin-top: 1.3em;
+    box-shadow: 0px 0px 2px 2px rgba(128, 128, 128, 0.418);
+    background-image: linear-gradient(
+      to right,
+      rgb(8, 148, 8),
+      rgba(34, 139, 34, 0.808)
+    );
+    color: white;
+  }
+
+  #deposit {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    margin-top: 1.5em;
+    box-shadow: 0px 0px 2px 2px rgba(128, 128, 128, 0.418);
+    background-image: linear-gradient(
+      to right,
+      rgba(205, 92, 92, 0.856),
+      indianred
+    );
+    color: white;
+  }
+}
+
+// very small mobile phones
+@media screen and (max-width: 320px) {
+  .top-container {
+    width: 90%;
+    padding-bottom: 1.5em;
+  }
+
+  .bottom-container {
+    width: 90%;
+
+    .container {
+      button,
+      div {
+        padding: 3px;
+      }
+    }
+  }
+}
+
+// medium mobile phones
+@media screen and (max-width: 375px) {
+  .top-container {
+    width: 90%;
+    padding-bottom: 1.5em;
+  }
+
+  .bottom-container {
+    width: 90%;
+
+    .container {
+      button,
+      div {
+        padding: 3px;
+      }
+    }
+  }
+}
+// large mobile phones
+@media screen and (max-width: 425px) {
+  .top-container {
+    width: 90%;
+    padding-bottom: 1.5em;
+  }
+
+  .bottom-container {
+    width: 90%;
+
+    .container {
+      button,
+      div {
+        padding: 3px;
+      }
+    }
+  }
+}
+// Tablets
+@media screen and (max-width: 768px) {
+  .top-container {
+    width: 90%;
+    padding-bottom: 1.5em;
+  }
+
+  .bottom-container {
+    width: 90%;
+
+    .container {
+      button,
+      div {
+        padding: 3px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .top-container {
+    width: 90%;
+    padding-bottom: 1.5em;
+  }
+
+  .bottom-container {
+    width: 90%;
+
+    .container {
+      button,
+      div {
+        padding: 3px;
+      }
+    }
+  }
+}
